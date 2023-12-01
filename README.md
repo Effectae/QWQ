@@ -1,8 +1,10 @@
 # 逆向教学
 > 数据
 
-![G.png](./ZY/PNG/juz1.png)
-
 > 实现
+# 杂
+
+[GitHub小知识](./G/git.md)
+
 #   关于
 ***bilibili : [Effectae](https://space.bilibili.com/2064476451)***
