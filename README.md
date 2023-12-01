@@ -4,7 +4,7 @@
 > 实现
 # 杂
 
-[GitHub小知识](./G/git.md)
+[GitHub小知识](./S/G/git.md)
 
 #   关于
 ***bilibili : [Effectae](https://space.bilibili.com/2064476451)***
