@@ -1,7 +1,7 @@
 # 逆向教学
 > 数据
 
-![G](./PNG/juz1.png)
+![G.png](./ZY/PNG/juz1.png)
 
 > 实现
 #   关于
