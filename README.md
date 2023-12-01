@@ -1,9 +1,7 @@
 # 逆向教学
 > 数据
 
-<div align="center">
-  <img src="./PNG/juz1.png" width="750"  style="margin: 10px;"/>
-</div>
+![G](./PNG/juz1.png)
 
 > 实现
 #   关于
