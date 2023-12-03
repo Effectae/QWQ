@@ -1,8 +1,13 @@
 # Granny2绘制
+
 ## 包名
+
 - **包名** : com.dvloper.grannychaptertwo
+
 ****
+
 ## 矩阵
+
 **矩阵指针锁链**
 
 >- libunity.so:bss[1] + 0x2F6C4 -> 0xF0 -> 0x54 -> 0xC4
@@ -35,33 +40,47 @@
 
 ***不保证一直可以用（抓到的有限）***
 ****
+
 ## 结构体
 
 ***特征*** -- 258D
 ****
 **结构体指针锁链***
- - libunity.so:bss[1] + 0x3488C -> 0x8 -> 0xFC -> 0x4
+
+- libunity.so:bss[1] + 0x3488C -> 0x8 -> 0xFC -> 0x4
+
 ****
 **没有找到结构体数量的值**
 
 **约34~64个结构体 不定**
 
 **结构体数据偏移值**
+
 - 0x60 X坐标
 - 0x74 方向
 
 **无过滤无用结构体 !!!!!**
 ****
+
 ## Build
+
 - 1.build by **Termux**
+>
 >- cd build
 >- cmake .. && make -j8
+>
 ****
+
 - 2.build by **Termux**
+>
 >- make
+>
 ****
+
 # 其他信息
+>
 >- libunity.so:bss - libunity.so = c51000
 
 ****
+
 ## [内核实现](../WW/README.md)

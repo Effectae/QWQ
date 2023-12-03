@@ -15,7 +15,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-//#include <iostream>
+// #include <iostream>
 
 #define bool int8_t
 #define false 0
@@ -93,7 +93,7 @@ long getbss(int pid, const char *module_name)
 	{
 		while (fgets(line, sizeof(line), fp))
 		{
-			if (strstr(line, module_name ))
+			if (strstr(line, module_name))
 			{
 				is = true;
 			}
@@ -126,7 +126,7 @@ long getCd(int pid, const char *module_name)
 	{
 		while (fgets(line, sizeof(line), fp))
 		{
-			if (strstr(line, str ))
+			if (strstr(line, str))
 			{
 				sscanf(line, "%lx", &addr);
 				break;
@@ -136,8 +136,6 @@ long getCd(int pid, const char *module_name)
 	}
 	return addr;
 }
-
-
 
 long int handle;
 float gainF(long int addr)
@@ -153,7 +151,7 @@ int gainD(long int addr)
 	pread64(handle, &var, 4, addr);
 	return var;
 }
-//32位指针
+// 32位指针
 long int lsp32(long int addr)
 {
 	long int var = 0;
@@ -161,40 +159,46 @@ long int lsp32(long int addr)
 	return var;
 }
 
-//64位指针
+// 64位指针
 long int lsp64(long int addr)
 {
 	long int var = 0;
 	pread64(handle, &var, 8, addr);
 	return var;
 }
-//D类型
-int WriteAddress_DWORD(long int addr,int value) {
+// D类型
+int WriteAddress_DWORD(long int addr, int value)
+{
 	pwrite64(handle, &value, 4, addr);
 	return 0;
 }
-//F类型
-float WriteAddress_FLOAT(long int addr, float value) {
+// F类型
+float WriteAddress_FLOAT(long int addr, float value)
+{
 	pwrite64(handle, &value, 4, addr);
 	return 0;
 }
-//B类型
-int8_t WriteAddress_BYTE(long int addr,int value) {
+// B类型
+int8_t WriteAddress_BYTE(long int addr, int value)
+{
 	pwrite64(handle, &value, 1, addr);
 	return 0;
 }
-//W类型
-int16_t WriteAddress_WORD(long int addr,int value) {
+// W类型
+int16_t WriteAddress_WORD(long int addr, int value)
+{
 	pwrite64(handle, &value, 2, addr);
 	return 0;
 }
-//Q类型
-int64_t WriteAddress_QWORD(long int addr,int value) {
+// Q类型
+int64_t WriteAddress_QWORD(long int addr, int value)
+{
 	pwrite64(handle, &value, 32, addr);
 	return 0;
 }
-//E类型
-double WriteAddress_DOUBLE(long int addr, double value) {
+// E类型
+double WriteAddress_DOUBLE(long int addr, double value)
+{
 	pwrite64(handle, &value, 64, addr);
 	return 0;
 }
