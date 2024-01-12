@@ -16,7 +16,6 @@ jobs:
 
     - name: downlaod
       run: |
-          apt install wget -y
           wget https://github.com/ProtonVPN/win-app/releases/download/3.2.9/ProtonVPN_v3.2.9.exe
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
