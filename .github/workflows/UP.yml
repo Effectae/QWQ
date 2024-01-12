@@ -16,9 +16,9 @@ jobs:
 
     - name: downlaod
       run: |
-          wget https://github.com/ProtonVPN/win-app/releases/download/3.2.9/ProtonVPN_v3.2.9.exe
+       wget https://github.com/glfw/glfw/releases/download/3.3.9/glfw-3.3.9.bin.WIN64.zip
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
       with:
-          name: ProtonVPN_v3.2.9.exe
-          path: ProtonVPN_v3.2.9.exe
+          name: glfw-3.3.9.bin.WIN64.zip
+          path: glfw-3.3.9.bin.WIN64.zip
