@@ -1,4 +1,4 @@
-name: UP CI
+name: UP&&download
 
 on:
   push:
