@@ -17,7 +17,7 @@ jobs:
     - name: downlaod
       run: |
        wget https://builds.paranoidandroid.co/aospa-uvite-beta-mi439-20231231.zip
-    - name: Upload build artifact
+    - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
           name: aospa-uvite-beta-mi439-20231231
