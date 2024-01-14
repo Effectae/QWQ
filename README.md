@@ -17,6 +17,8 @@
 
 [GitHub小知识](./S/Z/git.md)
 
+[GitHub release下载加速](https://doget.nocsdn.com/)
+
 # 关于
 
 ***bilibili : [Effectae](https://space.bilibili.com/2064476451)***
